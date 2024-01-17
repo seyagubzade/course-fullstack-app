@@ -4,6 +4,7 @@ import { Formik, Field, Form } from "formik";
 import { useDispatch, useSelector } from "react-redux";
 import { AddNew, GetAll } from "../../store/course/api_actions";
 import { useNavigate } from "react-router";
+import { Helmet } from "react-helmet";
 
 const Add = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,9 @@ const Add = () => {
 
   return (
     <div className="container pt-5">
+      <Helmet>
+        <title>Add new product</title>
+      </Helmet>
       <h1>Add New Item</h1>
       <Formik
         initialValues={{

@@ -39,32 +39,38 @@ const HeroSlider = () => {
               <h2 className="mb-5">
                 Get Your <span>Eductaion</span> today!
               </h2>
-              <div className="slider-cards">
-                <div className="slider-card d-flex align-items-center">
-                  <div className="icon">
-                    <i class="fa-thin fa-earth-americas"></i>
-                  </div>
-                  <div className="text">
-                    <h3>Online Courses</h3>
-                    <a className="text-light">view more</a>
-                  </div>
-                </div>
-                <div className="slider-card d-flex align-items-center">
-                  <div className="icon">
-                    <i class="fa-thin fa-earth-americas"></i>
-                  </div>
-                  <div className="text">
-                    <h3>Online Courses</h3>
-                    <a className="text-light">view more</a>
+              <div className="slider-cards row">
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="slider-card d-flex align-items-center">
+                    <div className="icon">
+                      <i class="fa-thin fa-earth-americas"></i>
+                    </div>
+                    <div className="text">
+                      <h3>Online Courses</h3>
+                      <a className="text-light">view more</a>
+                    </div>
                   </div>
                 </div>
-                <div className="slider-card d-flex align-items-center">
-                  <div className="icon">
-                    <i class="fa-thin fa-earth-americas"></i>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="slider-card d-flex align-items-center">
+                    <div className="icon">
+                      <i class="fa-thin fa-earth-americas"></i>
+                    </div>
+                    <div className="text">
+                      <h3>Online Courses</h3>
+                      <a className="text-light">view more</a>
+                    </div>
                   </div>
-                  <div className="text">
-                    <h3>Online Courses</h3>
-                    <a className="text-light">view more</a>
+                </div>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="slider-card d-flex align-items-center">
+                    <div className="icon">
+                      <i class="fa-thin fa-earth-americas"></i>
+                    </div>
+                    <div className="text">
+                      <h3>Online Courses</h3>
+                      <a className="text-light">view more</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -72,39 +78,45 @@ const HeroSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={BgImg2} alt="bg-img" />
+          <img src={BgImg2} alt="bg-img" />
 
-        <div className="slider-content">
+          <div className="slider-content">
             <div className="slider-content container">
               <h2 className="mb-5">
                 Get Your <span>Eductaion</span> today!
               </h2>
-              <div className="slider-cards">
-                <div className="slider-card d-flex align-items-center">
-                  <div className="icon">
-                    <i class="fa-thin fa-earth-americas"></i>
-                  </div>
-                  <div className="text">
-                    <h3>Online Courses</h3>
-                    <a className="text-light">view more</a>
-                  </div>
-                </div>
-                <div className="slider-card d-flex align-items-center">
-                  <div className="icon">
-                    <i class="fa-thin fa-earth-americas"></i>
-                  </div>
-                  <div className="text">
-                    <h3>Online Courses</h3>
-                    <a className="text-light">view more</a>
+              <div className="slider-cards row">
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="slider-card d-flex align-items-center">
+                    <div className="icon">
+                      <i class="fa-thin fa-earth-americas"></i>
+                    </div>
+                    <div className="text">
+                      <h3>Online Courses</h3>
+                      <a className="text-light">view more</a>
+                    </div>
                   </div>
                 </div>
-                <div className="slider-card d-flex align-items-center">
-                  <div className="icon">
-                    <i class="fa-thin fa-earth-americas"></i>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="slider-card d-flex align-items-center">
+                    <div className="icon">
+                      <i class="fa-thin fa-earth-americas"></i>
+                    </div>
+                    <div className="text">
+                      <h3>Online Courses</h3>
+                      <a className="text-light">view more</a>
+                    </div>
                   </div>
-                  <div className="text">
-                    <h3>Online Courses</h3>
-                    <a className="text-light">view more</a>
+                </div>
+                <div className="col-12 col-md-6 col-lg-4">
+                  <div className="slider-card d-flex align-items-center">
+                    <div className="icon">
+                      <i class="fa-thin fa-earth-americas"></i>
+                    </div>
+                    <div className="text">
+                      <h3>Online Courses</h3>
+                      <a className="text-light">view more</a>
+                    </div>
                   </div>
                 </div>
               </div>

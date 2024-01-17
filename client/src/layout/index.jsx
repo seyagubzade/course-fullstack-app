@@ -32,6 +32,8 @@ const StyledWrapper = styled.div``;
 
 const StyledContent = styled.div`
   padding-top: 80px;
+  min-height: 100vh;
+  padding-bottom: 30px;
 `;
 
 export default Layout;

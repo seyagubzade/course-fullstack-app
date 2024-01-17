@@ -55,13 +55,10 @@ body {
         margin-top: 80px;
     }
     .slider-cards {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-
         .slider-card {
             background: #1a1a1a;
             padding: 30px 20px;
+            margin-top: 12px;
         }
         .icon {
             width: 100px;

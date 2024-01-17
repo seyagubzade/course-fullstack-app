@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 import { DeleteById, GetById } from "../../store/course/api_actions";
 import styled from "styled-components";
 import { addToWishlist } from "../../store/wishlist/wishlistSlice";
+import { Helmet } from "react-helmet";
 
 const Detail = () => {
   const { id } = useParams();
@@ -16,6 +17,9 @@ const Detail = () => {
   }, [id]);
   return (
     <StyledWrapper>
+        <Helmet>
+        <title>Detail</title>
+      </Helmet>
       <div className="container">
         {loading ? (
           <div class="spinner-border" role="status">

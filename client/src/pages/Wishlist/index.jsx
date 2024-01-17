@@ -1,12 +1,16 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { removeFromWishlist } from "../../store/wishlist/wishlistSlice";
+import { Helmet } from "react-helmet";
 
 const Wishlist = () => {
   const dispatch = useDispatch();
   const { wishlist } = useSelector((state) => state.wishlist);
   return (
     <div className="wishlist">
+      <Helmet>
+        <title>Wishlist</title>
+      </Helmet>
       <div className="container pt-5">
         <table class="table">
           <thead>

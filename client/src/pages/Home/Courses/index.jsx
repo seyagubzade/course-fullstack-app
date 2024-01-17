@@ -31,14 +31,51 @@ const Courses = () => {
           <h3>Popular Courses</h3>
         </div>
         <div className="content">
-          <div className="filter-section mb-5">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Search"
-              value={searchValue}
-              onChange={(e) => setSearchValue(e.target.value)}
-            />
+          <div className="filter-section mb-3 row">
+            <div className="col-12 col-md-6 col-lg-6">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Search"
+                value={searchValue}
+                onChange={(e) => setSearchValue(e.target.value)}
+              />
+            </div>
+            <div
+              class="btn-group col-12 col-md-6 col-lg-6"
+              role="group"
+              aria-label="Basic example"
+            >
+              <button
+                type="button"
+                class="btn btn-light"
+                onClick={() => setFilteredData(courses)}
+              >
+                Default
+              </button>
+              <button
+                type="button"
+                class="btn btn-light"
+                onClick={() =>
+                  setFilteredData(() =>
+                    [...courses].sort((a, b) => a.price - b.price)
+                  )
+                }
+              >
+                Low to high
+              </button>
+              <button
+                type="button"
+                class="btn btn-light"
+                onClick={() =>
+                  setFilteredData(() =>
+                    [...courses].sort((a, b) => b.price - a.price)
+                  )
+                }
+              >
+                High to low
+              </button>
+            </div>
           </div>
           <div className="row pt-3">
             {loading ? (
@@ -49,19 +86,37 @@ const Courses = () => {
               filteredData?.map((item) => (
                 <div className="col-12 col-md-6 col-lg-4">
                   <div className="card mt-4">
-                    <img src={item.image || "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"} class="card-img-top" alt="card-img" style={{height:"250px", objectFit:"cover"}}/>
+                    <img
+                      src={
+                        item.image ||
+                        "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+                      }
+                      class="card-img-top"
+                      alt="card-img"
+                      style={{ height: "250px", objectFit: "cover" }}
+                    />
                     <div class="card-body">
                       <Link to={`/detail/${item._id}`}>
                         <h5 class="card-title">{item.title}</h5>
                       </Link>
                       <p class="card-text">{item.desc}</p>
                       <div className="actions">
-                        <button className="btn btn-outline-dark" onClick={()=>{
-                            dispatch(DeleteById(item._id))
-                        }}>Delete</button> {" "}
-                        <button className="btn btn-dark" onClick={()=>{
-                            dispatch(addToWishlist(item))
-                        }}>Add to wishlist</button>
+                        <button
+                          className="btn btn-outline-dark"
+                          onClick={() => {
+                            dispatch(DeleteById(item._id));
+                          }}
+                        >
+                          Delete
+                        </button>{" "}
+                        <button
+                          className="btn btn-dark"
+                          onClick={() => {
+                            dispatch(addToWishlist(item));
+                          }}
+                        >
+                          Add to wishlist
+                        </button>
                       </div>
                     </div>
                     <div className="card-bottom d-flex align-items-center">
