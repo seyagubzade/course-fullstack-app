@@ -1,0 +1,60 @@
+.courses-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .section-header {
+        text-align: center;
+        .divider {
+            height: 5px;
+            width: 50px;
+            background: #ffb606;
+            border-radius: 20px;
+            margin: 12px auto;
+        }
+    }
+    .card {
+        background: #f8f9fb;
+        border-radius: 0;
+        border: none;
+        .card-body {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            h5 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.1rem;
+                color: #828282;
+            }
+        }
+        .card-bottom {
+            background-color: #eaebec;
+            flex: 1;
+            justify-content: space-between;
+            min-height: 40px;
+            .author-image {
+                padding: 12px;
+            }
+            .author-info {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                h5{
+                    margin: 0;
+                }
+            }
+            .price{
+                padding: 18px;
+                font-size: 1.2rem;
+                background: #FFB606;
+                color: #fff;
+                height: 100%;
+            }
+        }
+    }
+}
